@@ -5,7 +5,7 @@ import { Transactions } from './componentes/transactions/transactions';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'index',
     component: Index,
   },
   {
