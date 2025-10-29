@@ -5,6 +5,7 @@ import { Transactions } from './componentes/transactions/transactions';
 import { Basic } from './componentes/general/componentes/basic/basic';
 import { Contact } from './componentes/general/componentes/contact/contact';
 import { Address } from './componentes/general/componentes/address/address';
+import { PageNotFound } from './componentes/page-not-found/page-not-found';
 
 export const routes: Routes = [
   {
@@ -24,4 +25,8 @@ export const routes: Routes = [
     path: 'transactions',
     component: Transactions,
   },
+  {
+    path: '**',
+    component: PageNotFound
+  }
 ];
