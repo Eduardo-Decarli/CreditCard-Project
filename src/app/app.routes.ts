@@ -6,6 +6,8 @@ import { Basic } from './componentes/general/componentes/basic/basic';
 import { Contact } from './componentes/general/componentes/contact/contact';
 import { Address } from './componentes/general/componentes/address/address';
 import { PageNotFound } from './componentes/page-not-found/page-not-found';
+import { Credit } from './componentes/transactions/componentes/credit/credit';
+import { Debit } from './componentes/transactions/componentes/debit/debit';
 
 export const routes: Routes = [
 
@@ -30,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'transactions',
     component: Transactions,
+    children: [
+      { path: 'credit', component: Credit },
+      { path: 'debit', component: Debit }
+    ]
   },
   {
     path: '**',
