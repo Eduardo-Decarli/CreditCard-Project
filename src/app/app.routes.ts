@@ -8,6 +8,12 @@ import { Address } from './componentes/general/componentes/address/address';
 import { PageNotFound } from './componentes/page-not-found/page-not-found';
 
 export const routes: Routes = [
+
+  {
+    path: '',
+    redirectTo: 'index',
+    pathMatch: 'full'
+  },
   {
     path: 'index',
     component: Index,
